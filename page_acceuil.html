@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>education web site </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap-icons-1.10.5/font/bootstrap-icons.min.css">
+  </head>
+<body>
+  <style>
+    body {
+        font-family: 'montserrat';
+    }
+   
+    .nav-item { 
+      margin-left: 30px ;
+      transition: .3s ease-in;
+      border-radius: 10px ;
+      
+
+    }
+    header.nav-item:hover {
+      box-shadow: 2px 2px 5px rgb(75, 74, 74);
+      background-color: rgba(60, 59, 58, 0.575);
+      font-size: 22px;
+
+    }
+    #baniere { 
+      background-image: url(back.jpg) ; 
+    background-size: cover;
+    height: 600px;
+   }
+   
+   #coll {
+    height: 400px;
+    background-color: #f0a50e28;
+
+   }
+
+   .border_section { 
+    border-left: 10px solid #000000 ;
+    padding-left: 10px;
+
+   }
+
+   a {
+  text-decoration: none; 
+  color: rgba(255, 250, 242, 0.658);
+  font-weight: 300;
+ }
+ #form { 
+  background-color: #e09e0f6b;
+ }
+
+
+
+</style>
+
+<header class=" text-bg-dark sticky-top">
+  <div class="container-fluid  d-flex justify-content-around align-items-center ">
+
+ <div class="logo">
+  <a href="#" class="   text-white text-decoration-none">
+    <p class="p-2 border-bottom border-warning border-5 rounded fw-bold fs-4" style="letter-spacing:5px;  ">
+      <span class="text-warning ">Logistics</span> <span class="text-muted">CENTER</span> </p>
+    </a>
+ </div>
+  <nav class="navbar navbar-expand-lg navbar-dark  ">
+    <div class="container-fluid">
+      <div class=" navbar-brand " >
+        <ul class="navbar-nav me-auto  ">
+          <li class="nav-item">
+            <a class="nav-link "  href="#">Acceuil </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Nos Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="qui_sommes_nous.html" >Qui sommes Nous </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html" >Contact  </a>
+          </li>
+        </ul>
+      </nav>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" >
+          <button id="searchButton" class="btn btn-outline-warning" type="submit" onclick="showSpinner()">Search</button>
+        </form>
+        
+      </div>
+</header>
+
+<section id="baniere">
+<div class="  p-3 p-md-3  text-center ">
+    <div class=" p-lg-5 mx-auto ">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-8  bg-muted shadow-lg rounded-4 " id="coll">
+          <h1 class="display-1 fw-normal text-warning fw-bold shadow-lg " 
+      style="text-shadow:1px 1px 1px black; letter-spacing :5px  ">
+       <span class="text-dark ">Une solution </span>fiable   
+    </h1> <br> <br>
+      <p class="lead text-light " style="text-shadow:2px 1px 1px black;font-weight: 600;">
+        Bienvenue chez <span class="text-warning ">LogisticsCENTER</span> , votre partenaire logistique de confiance.
+         Nous offrons des solutions intégrées pour optimiser votre chaîne logistique, 
+         réduire les coûts et améliorer l'efficacité de votre entreprise. 
+         Découvrez notre expertise en matière de gestion de la chaîne d'approvisionnement et bénéficiez
+         d'une collaboration solide pour atteindre vos objectifs logistiques.
+        </p>
+        <div class="btn">
+                <a class="btn btn-warning text-uppercase fw-bold shadow-lg px-3 rounded-3 text-dark  text-shadow " href="services.html">Parcourir</a>
+        </div>
+        </div>
+      </div>
+      </div> 
+    </div>
+  </section>
+<!-- <section></section> -->
+
+<div class="container-sm mt-4">
+<hr class="featurette-divider m-3">
+<div class="row featurette " id="transi">
+  <div class="col-md-5 shadow-lg ">
+    <h2 class="featurette-heading fw-normal h1 m-5"> 
+      <span class="text-warning   border_section fw-bold ">Qui sommes NOUS</span>   </h2>
+    <p class="lead m-5"> <b class="fw-bold">Logistics</b> <strong class="fw-bold text-warning  ">CENTER</strong>  
+      est une entreprise de logistique réputée, spécialisée dans la gestion complète de <strong>la chaîne d'approvisionnement</strong>. Forts de notre expertise et de notre expérience, nous proposons des solutions innovantes et personnalisées pour répondre aux besoins spécifiques de nos clients. Notre équipe dévouée est composée d'experts en logistique, prêts à vous accompagner dans toutes les étapes de votre parcours logistique. Nous nous engageons à fournir un service de qualité.
+     
+    </p>
+  </div>
+  <div class="col-md-7">
+    <img src="img-boucle.jpg" alt="" class="w-100 rounded " style="background-image: contain;">
+
+  </div>
+</div>
+<hr class="featurette-divider m-5">
+
+
+<!-- Les cartes  -->
+<section class="container  "  >
+ <center><h1 style=" clear: both; font-size: 30px;" 
+  class="bg-warning text-dark mb-4 fw-bold fs-2  border-top px-3 py-3 rounded shadow-lg text-uppercase w-50">Decouvrez Nos services   </h1></center> 
+  <div class="row d-flex align-items-center "  id="transi">
+    <div class="col-12 col-md-6 col-lg-3 ">
+      <section class="card shadow-lg text-center">
+        <img src="cards/4.jpg" alt="" class="card-img-top mb-0">
+      <div class="card-body ">
+        <h1 class="card-title h4 text-center fw-bold text-info mb-4 shadow-sm rounded-3 p-2" >Entreposage et stockage</h1>
+                <p class="card-text">Notre infrastructure moderne et sécurisée vous permet de stocker vos produits dans les meilleures conditions, avec un suivi précis des niveaux de stock.</p>
+      <a href="services.html#service" class="btn btn-warning ">En savoir plus...</a>
+              </div>
+      </section>
+   </div>
+   <div class="col-12 col-md-6 col-lg-6 ">
+    <section class="card shadow-lg text-center">
+      <img src="services_img.jpg" alt="" class="card-img-top">
+    <div class="card-body ">
+      <h1 class="card-title h4  text-center fw-bold text-info mb-4 shadow-sm rounded-3 p-2" >Gestion de la chaîne d'approvisionnement</h1>
+<p class="card-text">Nous assurons une gestion complète et optimisée de votre chaîne logistique, de la planification à la livraison finale, et 
+ nous offrons des solutions de transport efficaces et fiables, adaptées à vos besoins spécifiques, que ce soit pour des envois nationaux ou internationaux.</p>
+      <a href="services.html#service" class="btn btn-warning">En savoir plus...</a>
+            </div>
+    </section>
+ </div>
+ <div class="col-12 col-md-6 col-lg-3 ">
+  <section class="card shadow-lg text-center"  id="transi">
+    <img src="flat_contact .jpg" alt="" class="card-img-top">
+  <div class="card-body ">
+    <h1 class="card-title h4 text-center fw-bold text-info mb-4 shadow-sm rounded-3 p-2" >Services de valeur </h1>
+            <p class="card-text">Nous proposons une gamme de services supplémentaires tels que l'emballage, l'étiquetage, le contrôle de qualité et bien d'autres, pour répondre à tous vos besoins logistiques.</p>
+  <a href="services.html#service" class="btn btn-warning">En savoir plus...</a>
+          </div>
+  </section>
+</div>
+</section>
+
+
+
+
+
+<hr class="featurette-divider m-5">
+<div class="row featurette"  id="transi">
+  <div class="col-md-7 shadow-lg ">
+    <h2 class="featurette-heading fw-normal h1 m-5 "> 
+      <span class="text-warning fw-bold border_section"> Notre Expertise </span>
+    <p class="lead m-5"> LogisticsCENTER se positionne en tant que leader incontesté de l'industrie logistique, grâce à son expertise approfondie en gestion de la chaîne d'approvisionnement, à l'utilisation de technologies logistiques avancées à la pointe de l'innovation, à une solide expérience dans la gestion des opérations internationales, à son aptitude éprouvée à optimiser les coûts logistiques tout en maintenant un niveau élevé de service, ainsi qu'à sa rigueur exemplaire en matière 
+      de gestion des risques et de la sécurité des opérations.</p>
+<br> 
+  </div>
+  <div class="col-md-5">
+    <img src="expert.jpg" alt="" class="w-100 rounded " style="background-image: contain;">
+
+  </div>
+</div>
+<hr class=" m-5">
+</div>
+
+
+<div class="b-example-divider"></div>
+<!--  -->
+<section class="container">
+  <div class="">
+    <h2 class=" fw-normal h1 m-5 text-center bg-warning "> 
+    <span class="text-dark   fw-bold "> Nos Clients satisfaits </span> </h2>
+  </div>
+  
+  <div class=" mt-3 justify-content-center text-center container">
+    <div class="row g-4 "  id="transi">
+      <div class="col-4  text-justify ">
+         
+        <img src="img_clients/avatar1.jpg" alt="" class="rounded-circle align-items-lg-center mb-2"> 
+        <p class="fw-bold text-dark ">Vladimir Bogoev</p>
+        <p> <i class="bi bi-star-fill text-warning fs-4"></i>
+          <i class="bi bi-star-fill text-warning fs-4"></i>
+          <i class="bi bi-star-fill text-warning fs-4"></i>
+          <i class="bi bi-star-fill text-warning fs-4"></i>
+        </p>
+        <p class="fst-italic">
+          <i class="bi bi-quote fs-2"></i> LogisticsCENTER a révolutionné notre chaîne d'approvisionnement. Leur expertise et leur engagement ont amélioré notre efficacité opérationnelle.  <i class="bi bi-heart-fill text-danger "></i>
+          "        </p>
+      
+        </div>      
+         <div class="col-4 text-justify"> 
+            <img src="img_clients/avatar2.jpg" alt="" class=" rounded-circle  align-items-lg-center mb-2">
+        <p class="fw-bold text-dark ">Nelson Mandela  </p>
+        <p> <i class="bi bi-star-fill text-warning fs-4"></i>
+          <i class="bi bi-star-fill text-warning fs-4"></i>
+          <i class="bi bi-star-fill text-warning fs-4"></i>
+          <i class="bi bi-star-half text-warning fs-4"></i> 
+        </p>
+         <p class="fst-italic">
+          <i class="bi bi-quote fs-2"></i>Nous sommes ravis des services logistiques fournis par LogisticsCENTER. Leur professionnalisme et leur réactivité sont incomparables."         </p></div>
+      <div class="col-4 text-justify"> 
+        <img src="img_clients/avatar3.jpg" alt="" class="rounded-circle align-items-lg-center mb-2"> 
+        <p class="fw-bold text-dark ">Martin luther king </p>
+        <p> <i class="bi bi-star-fill text-warning fs-4"></i>
+          <i class="bi bi-star-fill text-warning fs-4"></i>
+          <i class="bi bi-star-fill text-warning fs-4"></i>
+          <i class="bi bi-star-half text-warning fs-4"></i> 
+        </p>
+        <p class="fst-italic"> 
+          <i class="bi bi-quote fs-2"></i>Grâce à LogisticsCENTER, nous avons réduit nos coûts logistiques tout en améliorant notre service client. Nous recommandons vivement leur expertise.  "        </p></div>
+          </div>
+  </div>
+  </section>
+  <hr class="featurette-divider m-4">
+
+<!-- le debut du formulaure  -->
+<div class="form  container">
+  <div class="row">
+    <div class="col-5 ">
+      <div class="text-center">
+              <h3 class="text-light  bg-warning p-3  rounded-3  fw-bold h5 ">
+               Inscrivez vous à la newletter</h3>
+      </div>
+      <form action=""  class="form-control "> 
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group mb-4">
+            <label for="">Prénom </label>
+       <input type="text"  class="form-control" required>
+         </div></div>
+         <div class="col-6 ">
+          <div class="form-group mb-4">
+           <label for="" >Nom </label>
+      <input type="text" class="form-control"  class="form-control"   required>
+        </div></div>
+        <div class="col-6">
+          <div class="form-group mb-4">
+           <label for="">Ville</label>
+      <input type="text"  class="form-control"  placeholder="ex: Coleah" required>
+        </div></div>
+        <div class="col-6"> <div class="form-group mb-4">
+          <label for="">Tel </label>
+     <input type="tel"  class="form-control"  placeholder="+224" required>  
+       </div></div>
+      <div class="col-12">
+       <label for="">Email /adresse  </label><div class="form-group mb-4">
+      <input type="email"  class="form-control" placeholder="@" required>
+    </div></div>
+    <br>
+    <div class="form-group text-start">
+      <label for="message">Votre message :</label>
+      <textarea class="form-control" id="message" rows="5" placeholder="Entrez votre message ici"></textarea>
+    </div>
+    <div class="col-1"></div>
+    <div class="form-check col-10 mt-5">
+      <input class="form-check-input " type="checkbox">
+      <label class="form-check-label" >
+       Conditions d'utilisations et politiques de ... 
+      </label>
+    </div> <br>
+
+
+<div class="col-10  text-center mt-2">
+  <button class="btn  btn-outline-warning ">  Soumettre </button>
+</div>
+ </div>   
+      </form>        
+
+    </div>
+    <div class="col-7 " id="bg-form">
+    <img src="contact1.png" alt="..." class="img-fluid">  
+    </div>
+  </div>
+</div>
+
+
+
+  
+  <footer class="bg-dark ">
+    <div class="row container  " style="margin-left: 150px;">
+      <div class=" navbar-brand col-3       rounded  p-2">
+        <h3 class=" text-light fw-bold p fs-5 "style="margin-left: 40px;" >|  Qui sommes Nous </h3>
+        <ul  class="  navbar-nav">
+          <li class="nav-link"> <a href="#" class="nav-item">LogisticsCenter leadership  </a></li>
+          <li class="nav-link"> <a href="#" class="nav-item">LogisticsCenter partenaire</a></li>
+          <li class="nav-link"> <a href="#" class="nav-item">LogisticsCenter invite</a></li>
+          <li class="nav-link"> <a href="#" class="nav-item">LogisticsCenter direction </a></li>
+          <li class="nav-link"> <a href="#" class="nav-item">Lorem ipsum dolor </a></li>
+        </ul>
+      </div>
+      <div class="navbar-brand col-3 border-left  text-dark    rounded  p-2">
+        <h3 class=" text-light fw-bold p fs-5" style="margin-left: 40px;">| Services</h3>
+        <ul  class=" navbar-nav ">
+          <li> <a href="#" class="nav-item">Gestion de vos ressources </a></li>
+          <li> <a href="#" class="nav-item">Stockage rapide </a></li>
+          <li> <a href="#" class="nav-item">La securité de vos richesse </a></li>
+          <li> <a href="#" class="nav-item">Accompagnement de ... </a></li>
+          <li> <a href="#" class="nav-item">Asemblage de .... </a></li>
+        </ul>
+      </div>
+      <div class="navbar-brand col-3 border-left  text-dark   text-justify rounded  p-2">
+        <h3 class=" text-light fw-bold p fs-5" style="margin-left: 40px;">| Liens rapide </h3>
+        <ul class="navbar-nav">
+          <li class="nav-link"> <a href="page_acceuil.html" class="nav-item">Acceuil </a></li>
+          <li class="nav-link"> <a href="qui_sommes_nous.html" class="nav-item">Qui sommes Nous  </a></li>
+          <li class="nav-link"> <a href="services.html" class="nav-item">Nos Services </a></li>
+          <li class="nav-link"> <a href="contact.html" class="nav-item">Contact </a></li>
+        </ul>
+      </div>
+      <div class="col-3 border-left  text-dark   text-justify rounded  p-2">
+        <h3 class=" text-light fw-bold p fs-5" style="margin-left: 40px;">Contact </h3>
+        <ul class=" d-flex justify-content-around align-items-center w-75 ">
+          <li class="nav-link"> <a  href="google.com" > <i class="bi bi-facebook fs-4 text-primary  "> </i > </a></li>
+          <li class="nav-link"> <a href="#"  > <i class="bi bi-whatsapp fs-4 text-success"> </i> </a></li>
+          <li class="nav-link"> <a href="#"  > <i class="bi bi-twitter fs-4 text-info "></iclass> </i > </a></li>
+          <li class="nav-link"> <a href="#"  > <i class="bi bi-youtube fs-4 text-danger "> </i > </a></li>
+        </ul>
+        
+        <div class="text-light text-center">
+        <p> <i class="bi bi-phone-fill fs-2  "></i> Telephone  (+ 224 620000000 )</p>
+        </div>
+        
+      </div>   
+  </footer>
+</div>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="active.js"></script>
+</html>
